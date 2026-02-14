@@ -5,3 +5,18 @@
 /.env.local
 /.idea
 package-lock.json
+
+# 个人文档和学习资料（不公开）
+/docs/
+
+# 个人配置和脚本（根据需要调整）
+# 如果您不想公开自定义的部署脚本，取消下面的注释
+# setup-custom-branch.ps1
+# sync-upstream.ps1
+# deploy-to-obsidian.ps1
+
+# 其他个人文件
+*.local.md
+*.personal.md
+*-TODO.md
+*-NOTES.md
