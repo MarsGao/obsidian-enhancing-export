@@ -1,0 +1,81 @@
+{
+  "items": [
+    {
+      "name": "Markdown"
+    },
+    {
+      "name": "Markdown (Hugo)"
+    },
+    {
+      "name": "Html"
+    },
+    {
+      "name": "TextBundle"
+    },
+    {
+      "name": "Typst"
+    },
+    {
+      "name": "PDF",
+      "arguments": "-f ${fromFormat} --resource-path=\"${currentDir}\" --resource-path=\"${attachmentFolderPath}\" --lua-filter=\"${luaDir}/pdf.lua\" -o \"${outputPath}\" -t pdf",
+      "customArguments": "--pdf-engine=xelatex -V mainfont=\"Microsoft YaHei\" -V CJKmainfont=\"Microsoft YaHei\" -V geometry:margin=1in"
+    },
+    {
+      "name": "Word (.docx)"
+    },
+    {
+      "name": "OpenOffice"
+    },
+    {
+      "name": "RTF"
+    },
+    {
+      "name": "Epub"
+    },
+    {
+      "name": "Latex"
+    },
+    {
+      "name": "Media Wiki"
+    },
+    {
+      "name": "reStructuredText"
+    },
+    {
+      "name": "Textile"
+    },
+    {
+      "name": "OPML"
+    },
+    {
+      "name": "Bibliography"
+    },
+    {
+      "name": "PowerPoint (.pptx)"
+    },
+    {
+      "name": "高昌宋体",
+      "type": "pandoc",
+      "arguments": "-f gfm --lua-filter=\"${luaDir}/shift_headings.lua\" --lua-filter=\"${luaDir}/newline_to_para.lua\" --resource-path=\"${currentDir}\" --resource-path=\"${attachmentFolderPath}\" -o \"${outputPath}\" -t docx",
+      "customArguments": "--reference-doc \"d:/GkDesktop/OneDrive - MSFT/Work0/06Notes/GK模板 公司文档模板+Logo/模-行政-3F 高昌机电文档模板.dotx\"",
+      "extension": ".docx",
+      "showCommandOutput": true
+    },
+    {
+      "name": "高昌仿宋",
+      "type": "pandoc",
+      "arguments": "-f gfm --lua-filter=\"${luaDir}/shift_headings.lua\" --lua-filter=\"${luaDir}/newline_to_para.lua\" --resource-path=\"${currentDir}\" --resource-path=\"${attachmentFolderPath}\" -o \"${outputPath}\" -t docx",
+      "customArguments": "--reference-doc \"d:/GkDesktop/OneDrive - MSFT/Work0/06Notes/GK模板 公司文档模板+Logo/模-行政-2D 高昌机电文档仿宋版.dotx\"",
+      "extension": ".docx",
+      "showCommandOutput": true
+    }
+  ],
+  "defaultExportDirectoryMode": "Auto",
+  "openExportedFile": true,
+  "env": {},
+  "showExportProgressBar": true,
+  "lastExportDirectory": {
+    "win32": "C:\\GkDesktop\\Downloads"
+  },
+  "lastExportType": "高昌仿宋"
+}
